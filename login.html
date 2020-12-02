@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        #Contenedor{
+            margin: 50px auto; 
+            padding: 10px;
+            background-color:lightpink;
+            width: 40%;
+            border: 1px solid black;}
+        
+        label{margin: 2px 25%;}
+
+        input[type=text]{
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 25%;
+            width: 50%;}
+        
+        input[type=password]{
+        display: block;
+        margin-bottom: 10px;
+        margin-left: 25%;
+        width: 50%;}
+
+        input[type=submit]{
+            width: 20%;
+            margin: 10px 40%;
+            padding: 5px;
+            box-sizing: border-box;
+            }
+    </style>
+</head>
+<body>
+    <div id="Contenedor">
+    <form method="post" action="/login">
+        <label for="usuario">Usuario:</label>
+        <input type="text" name="Usuario">
+        <label for="password">Password:</label>
+        <input type="password" name="Password">
+        <input type="submit" value="Login">
+    </form>
+    </div>
+</body>
+</html>
